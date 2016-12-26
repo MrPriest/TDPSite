@@ -1,0 +1,42 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+.centered-div {
+  position: absolute;
+  top: 44%;
+  left: 43%;
+}
+
+#logo {
+  margin-top: 7px;
+  opacity: 0.6;
+}
+
+#logo:hover{
+  opacity: 1;
+}
+
+#home-btn{
+  position: absolute;
+  top:56%;
+  left: 42%;
+  /*width: 100px;*/
+}
+
+#home-btn1{
+  width: 100px;
+  border: 1px solid white;
+  padding: 12px;
+  margin: 3px;
+  display: inline-block;
+}
+
+#home-btn2{
+  width: 100px;
+  border: 1px solid white;
+  padding: 12px;
+  margin: 3px;
+  display: inline-block;
+}
