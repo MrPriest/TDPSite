@@ -1,14 +1,3 @@
-body {
-    color: white;
-    background-color: black;
-}
-
-.centered-div {
-  position: absolute;
-  top: 44%;
-  left: 43%;
-}
-
 #logo {
   margin-top: 7px;
   opacity: 0.6;
@@ -18,25 +7,109 @@ body {
   opacity: 1;
 }
 
-#home-btn{
-  position: absolute;
-  top:54%;
-  left: 42%;
-  /*width: 100px;*/
-}
-
 #home-btn1{
-  width: 100px;
+  width: 90px;
   border: 1px solid white;
-  padding: 12px;
-  margin: 3px;
+  padding: 8px;
+  margin: 4px;
   display: inline-block;
+  text-align: center;
+  font-size: 12px;
 }
 
 #home-btn2{
-  width: 100px;
+  width: 90px;
   border: 1px solid white;
-  padding: 12px;
-  margin: 3px;
+  padding: 8px;
+  margin: 4px;
   display: inline-block;
+  text-align: center;
+  font-size: 12px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: white;
+  background-color: black;
+}
+
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+header {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url("../media/img/keyboard-wallpaper.jpg") center no-repeat;
+  /* Image Credit: Unsplash.me */
+  background-size: cover;
+}
+header .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  /*border: 5px solid #fff;*/
+  padding: .5em 3em;
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url("../media/img/keyboard-wallpaper-blurred.jpg") center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;
+}
+
+.site {
+  padding: 20em 0;
+  text-align: center;
+  background-color: #efefef;
+  font-size: .8em;
+  color: #444;
+}
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+.site a:hover {
+  color: #222;
 }
