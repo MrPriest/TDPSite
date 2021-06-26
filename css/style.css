@@ -121,3 +121,16 @@ header .overlay {
   font-size: .8em;
   color: #bbb;
 }
+
+.navbar-fixed-top {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #000000 !important;
+  opacity: 0.9;
+  transition: background-color 300ms linear;
+  color: #101010;
+}
