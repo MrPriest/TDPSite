@@ -90,11 +90,19 @@ $(document).ready(function() {
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("logo").style.width = "30px";
-      document.getElementById("logo").style.height = "30px";
-    } else {
-      document.getElementById("logo").style.width = "70px";
-      document.getElementById("logo").style.height = "70px";
-    }
+    // if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //   document.getElementById("logo").style.marginTop = document.getElementsByClassName("navContainer").offsetHeight * 0.1;
+    //   document.getElementById("logo").style.marginBottom = document.getElementsByClassName("navContainer").offsetHeight * 0.1;
+    //   document.getElementById("logo").style.width = document.getElementsByClassName("navContainer").offsetHeight * 0.8;
+    // } else {
+    //   document.getElementById("logo").style.marginTop = document.getElementsByClassName("navContainer").offsetHeight * 0.1;
+    //   document.getElementById("logo").style.marginBottom = document.getElementsByClassName("navContainer").offsetHeight * 0.1;
+    //   document.getElementById("logo").style.width = document.getElementsByClassName("navContainer").offsetHeight * 0.8;
+    // }
+    document.getElementById("logo").style.width = document.getElementById("navContainer").offsetHeight * 1;
+    document.getElementById("logo").style.height = document.getElementById("navContainer").offsetHeight * 1;
+    console.log("checking");
+    console.log(document.getElementById("navContainer").offsetHeight);
+    console.log(document.getElementById("logo").offsetHeight);
+    console.log(document.getElementById("logo").offsetWidth);
   }
